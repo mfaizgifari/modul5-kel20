@@ -5,22 +5,24 @@ import { MdGroup } from "react-icons/md";
 import "./App.css";
 import Movie from "./pages/Movie";
 import Profile from "./pages/Profile";
+import Detail from "./pages/detail";
 function App() {
   return (
     <BrowserRouter>
       <header>
-        <p id="titleGroup">Kelompok XX</p>
+        <p id="titleGroup">Kelompok 20</p>
       </header>
       <Routes>
+        <Route path="/" element={<Profile />} />
         <Route path="/movie" element={<Movie />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/detail" component={<Detail />} /> {/* Add this line */}
       </Routes>
       <footer>
         <NavLink to="/movie" className="iconWrapper">
           <HiHome className="icon" />
           Movie
         </NavLink>
-        <NavLink to="/profile" className="iconWrapper">
+        <NavLink to="/" className="iconWrapper">
           <MdGroup className="icon" />
           Profile
         </NavLink>

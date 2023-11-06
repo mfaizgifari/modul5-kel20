@@ -1,0 +1,29 @@
+.profile-card {
+  display: flex;
+  align-items: center;
+}
+
+#image {
+  margin-top: 20px;
+  height: 150px;
+  width: 150px;
+}
+
+.profile-info {
+  padding-left: 20px;
+}
+
+#nama {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Verdana;
+}
+
+#nim {
+  color: grey;
+  font-family: Verdana;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 5px;
+}

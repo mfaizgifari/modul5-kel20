@@ -43,12 +43,3 @@ p {
   font-size: 12px;
   margin-top: 5px;
 }
-
-.cards-container {
-  display: flex;
-  gap: 20px; /* Adjust the gap as needed to control the spacing between sections */
-}
-
-.section {
-  flex: 1; /* Distribute space evenly between sections */
-}

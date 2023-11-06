@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import CardBig from "../component/CardBig";
 import CardSmall from "../component/CardSmall";
-import "./Movie.css";
+import "./Profile.css";
 export default function Movie() {
   const STAR_COLOR = "rgb(220, 117, 21)";
   const STAR_SIZE = 20;
@@ -63,6 +63,7 @@ export default function Movie() {
               genre={item.genre}
               size={STAR_SIZE}
               color={STAR_COLOR}
+              onClick={() => alert("item id = " + item.id)}
             />
             {data.length === index + 1 ? (
               <div style={{ marginRight: 40 }} />
@@ -70,26 +71,50 @@ export default function Movie() {
           </Fragment>
         ))}
       </div>
-      <p id="movies">All Movies</p>
-      {data.map((item, index) => (
-        <Fragment key={item.id}>
-          <CardSmall
-            title={item.title}
-            img={item.img}
-            genre={item.genre}
-            size={STAR_SIZE}
-            color={STAR_COLOR}
-            onClick={() => alert("item id = " + item.id)}
-          />
-          {data.length === index + 1 && (
-            <div
-              style={{
-                marginBottom: 80,
-              }}
+      <div className="cards-container">
+        <p id="movies">All Movies</p>
+        {data.map((item, index) => (
+          <Fragment key={item.id}>
+            <CardSmall
+              title={item.title}
+              img={item.img}
+              genre={item.genre}
+              size={STAR_SIZE}
+              color={STAR_COLOR}
+              onClick={() => alert("item id = " + item.id)}
             />
-          )}
-        </Fragment>
-      ))}
+            {data.length === index + 1 && (
+              <div
+                style={{
+                  marginBottom: 80,
+                }}
+              />
+            )}
+          </Fragment>
+        ))}
+      </div>
+      <div className="section">
+        <p id="movies">All Movies</p>
+        {data.map((item, index) => (
+          <Fragment key={item.id}>
+            <CardSmall
+              title={item.title}
+              img={item.img}
+              genre={item.genre}
+              size={STAR_SIZE}
+              color={STAR_COLOR}
+              onClick={() => alert("item id = " + item.id)}
+            />
+            {data.length === index + 1 && (
+              <div
+                style={{
+                  marginBottom: 80,
+                }}
+              />
+            )}
+          </Fragment>
+        ))}
+      </div>
     </>
   );
 }
