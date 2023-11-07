@@ -1,4 +1,3 @@
-import { AiFillStar } from "react-icons/ai";
 import "./CardSmall.css";
 export default function CardSmall({ title, genre, img, size, color, onClick }) {
   return (

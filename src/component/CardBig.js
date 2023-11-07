@@ -1,4 +1,3 @@
-import { AiFillStar } from "react-icons/ai";
 import "./CardBig.css";
 import React from "react";
 

@@ -46,9 +46,8 @@ p {
 
 .cards-container {
   display: flex;
-  gap: 20px; /* Adjust the gap as needed to control the spacing between sections */
+  gap: 20px;
 }
-
 .section {
-  flex: 1; /* Distribute space evenly between sections */
+  flex: 1;
 }
