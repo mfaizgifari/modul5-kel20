@@ -1,13 +1,14 @@
+import React from "react";
 import "./CardProfile.css";
+
 export default function CardProfile(props) {
   return (
     <div className="containerBig">
-      <img src={props.image} alt="" className="posterBig" id="image" />
-      <div className="descriptionBig">
-        <div>
-          <p id="title">{props.nama}</p>
+      <div className="cardContent">
+        <img src={props.image} alt="" className="posterProfile" id="image" />
+        <div className="descriptionBig">
+          <p id="nama">{props.nama}</p>
           <p id="nim">{props.nim}</p>
-          <p id="genre">{props.genre}</p>
         </div>
       </div>
     </div>
